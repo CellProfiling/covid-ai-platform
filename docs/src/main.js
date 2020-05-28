@@ -3,6 +3,7 @@ Vue.component('label-selector', {
   template: document.getElementById('label-selector'),
 });
 
+alert('This website is under construction, the content is not ready for any covid-related research or applications.')
 
 function getThumbnail(url, tsize) {
   return new Promise((resolve, reject) => {
