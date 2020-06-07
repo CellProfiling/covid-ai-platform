@@ -2,9 +2,9 @@
   "name": "COVID-19 Model Repository",
   "description": "A COVID-19 model repository.",
   "version": "0.1.0",
-  "url_root": "https://raw.githubusercontent.com/CellProfiling/covid-ai-platform/master",
+  "url_root": "https://raw.githubusercontent.com/CellProfiling/covid19ai/master",
   "applications": {
-    "Ilastik": "https://raw.githubusercontent.com/CellProfiling/covid-ai-platform/master/src/Ilastik-app.imjoy.html",
+    "Ilastik": "https://raw.githubusercontent.com/CellProfiling/covid19ai/master/src/Ilastik-app.imjoy.html",
     "HPA-Classification": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/HPA-Classification.imjoy.html",
     "COVID-19-Classifier": "https://gist.githubusercontent.com/oeway/0b2cf01c77ed1512953137611a3fbecc/raw/COVID-Classifier.imjoy.html"
   },

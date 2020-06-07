@@ -21,7 +21,7 @@ Please follow the following steps:
  1. Run `python src/compile_model_manifest.py` to generate a new `manifest.model.json` with your models
  1. Commit your changes and push to your Github repo.
  1. You can preview it constructing an URL which makes COVID-19 model zoo render the page with the manifest file in your repo. The URL format is: `https://covid-ai.io?repo=YOUR_GITHUB_USER_NAME/YOUR_GITHUB_REPO`, for example: https://covid-ai.io?repo=oeway/models will point to the model manifest hosted on https://github.com/oeway/models. You can also add commit hash tag, branch name or tag after that, for example: https://covid-ai.io?repo=oeway/models/06a9ffac88.
- 1. If you are satisfied with the result above, you can send us a [Pull Request](https://github.com/CellProfiling/covid-ai-platform/pulls), and we will review it before it get merged.
+ 1. If you are satisfied with the result above, you can send us a [Pull Request](https://github.com/CellProfiling/covid19ai/pulls), and we will review it before it get merged.
 
  ## How to build BioEngine Apps?
  
@@ -75,7 +75,7 @@ Here are the steps:
 
 ## How integrate the model zoo to my own software?
 
-If you are developing or maintaining a software which can digest models in the model description format used in the BioImage model zoo, it's easy to fetch the latest model list (along with the other meta information) from this url `https://raw.githubusercontent.com/CellProfiling/covid-ai-platform/master/manifest.model.json`. 
+If you are developing or maintaining a software which can digest models in the model description format used in the BioImage model zoo, it's easy to fetch the latest model list (along with the other meta information) from this url `https://raw.githubusercontent.com/CellProfiling/covid19ai/master/manifest.model.json`. 
 
 By fetching the content of this JSON file, you will get all the models from the BioImage model zoo, and you can filter it based on your own supported framework, programming language etc.
 

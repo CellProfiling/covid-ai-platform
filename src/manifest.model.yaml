@@ -1,7 +1,7 @@
 name: COVID-19 Model Repository
 description: A COVID-19 model repository.
 version: 0.1.0
-url_root: https://raw.githubusercontent.com/CellProfiling/covid-ai-platform/master
+url_root: https://raw.githubusercontent.com/CellProfiling/covid19ai/master
 
 applications:
   Ilastik: src/Ilastik-app.imjoy.html
