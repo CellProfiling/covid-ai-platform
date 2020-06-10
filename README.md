@@ -20,7 +20,7 @@ Please follow the following steps:
  1. Add your models to the `src/manifest.model.yaml` file
  1. Run `python src/compile_model_manifest.py` to generate a new `manifest.model.json` with your models
  1. Commit your changes and push to your Github repo.
- 1. You can preview it constructing an URL which makes COVID-19 model zoo render the page with the manifest file in your repo. The URL format is: `https://covid-ai.io?repo=YOUR_GITHUB_USER_NAME/YOUR_GITHUB_REPO`, for example: https://covid-ai.io?repo=oeway/models will point to the model manifest hosted on https://github.com/oeway/models. You can also add commit hash tag, branch name or tag after that, for example: https://covid-ai.io?repo=oeway/models/06a9ffac88.
+ 1. You can preview it constructing an URL which makes COVID-19 model zoo render the page with the manifest file in your repo. The URL format is: `https://covid19ai.io?repo=YOUR_GITHUB_USER_NAME/YOUR_GITHUB_REPO`, for example: https://covid19ai.io?repo=oeway/models will point to the model manifest hosted on https://github.com/oeway/models. You can also add commit hash tag, branch name or tag after that, for example: https://covid19ai.io?repo=oeway/models/06a9ffac88.
  1. If you are satisfied with the result above, you can send us a [Pull Request](https://github.com/CellProfiling/covid19ai/pulls), and we will review it before it get merged.
 
  ## How to build BioEngine Apps?
@@ -60,7 +60,7 @@ You don't need to return any value after execution. In case of error, you can ju
 
 You can do the debugging inside [ImJoy](https://imjoy.io), for more information, please consult https://imjoy.io/docs.
 
-To test with the BioEngine, you can go to https://covid-ai.io, on the menu located in the top-right corner, you can load a local ImJoy plugin file to run it with the BioEngine. One additional feature is that the BioEngine will keep track of the local file, if you made new changes with your code editor (e.g. vim, vscode) the engine will try to reload the plugin file. 
+To test with the BioEngine, you can go to https://covid19ai.io, on the menu located in the top-right corner, you can load a local ImJoy plugin file to run it with the BioEngine. One additional feature is that the BioEngine will keep track of the local file, if you made new changes with your code editor (e.g. vim, vscode) the engine will try to reload the plugin file. 
 
 ## How to submit BioEngine Apps to the website?
 
@@ -70,7 +70,7 @@ Here are the steps:
  1. Once the BioEngine App is ready, you can then push it to your Github repo and get a `raw` URL for the file.
  1. Define a key in the `applications` section in `src/manifest.model.yaml`, and set the value as the `raw` URL to the BioEngine app file.
  1. For all the models which your app can digest, you can add your app key to the `applications` field of the model.
- 1. The procedure later are the same as contributing models, you can basically: run `python src/compile_model_manifest.py` to generate a new `manifest.model.json`, commit and push to your Github repo, preview it on covid-ai.io with `https://covid-ai.io?repo=YOUR_GITHUB_USER_NAME/YOUR_GITHUB_REPO` and optionally send us a Pull Request.
+ 1. The procedure later are the same as contributing models, you can basically: run `python src/compile_model_manifest.py` to generate a new `manifest.model.json`, commit and push to your Github repo, preview it on covid19ai.io with `https://covid19ai.io?repo=YOUR_GITHUB_USER_NAME/YOUR_GITHUB_REPO` and optionally send us a Pull Request.
 
 
 ## How integrate the model zoo to my own software?
