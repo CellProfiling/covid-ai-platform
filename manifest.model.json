@@ -97,6 +97,56 @@
       "download_url": "https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.1/2sUNetDA.model.zip"
     },
     {
+      "root_url": "https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/TianjinMUC",
+      "name": "TianjinMUC",
+      "description": "Modified Inception migration neuro network that achieved an overall 89.5% accuracy for COVID19. A webpage that licenced healthcare personnel cann upload CT images for testing and validation, https://ai.nscc-tj.cn/thai/deploy/public/pneumonia_ct.",
+      "cite": [
+        {
+          "text": "Wang, Shuai et al. A deep learning algorithm using CT images to screen for Corona Virus 2 Disease (COVID-19). medrxiv 2020.",
+          "doi": "https://doi.org/10.1101/2020.02.14.20023028"
+        }
+      ],
+      "authors": [
+        "Shuai Wang et.al"
+      ],
+      "documentation": "TianjinMUC.md",
+      "tags": [
+        "Inception",
+        "covid19",
+        "ct"
+      ],
+      "covers": [
+        "TianjinMUC.png"
+      ],
+      "config_url": "https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/TianjinMUC/TianjinMUC.model.yaml",
+      "applications": []
+    },
+    {
+      "root_url": "https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/RadLogics",
+      "name": "RadLogics",
+      "description": "AI model to automate CT image analysis for detction, quantification, and tracking of Covid19.",
+      "cite": [
+        {
+          "text": "Gozes, Ophir et al. Rapid AI Development Cycle for the Coronavirus (COVID-19) Pandemic: Initial Results for Automated Detection & Patient Monitoring using Deep Learning CT Image Analysisn. arxiv 2020.",
+          "doi": "https://arxiv.org/abs/2003.05037"
+        }
+      ],
+      "authors": [
+        "Ophir Gozes et.al"
+      ],
+      "documentation": "RadLogics.md",
+      "tags": [
+        "covid19",
+        "unet",
+        "resnet-50"
+      ],
+      "covers": [
+        "RadLogics.png"
+      ],
+      "config_url": "https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/RadLogics/RadLogics.model.yaml",
+      "applications": []
+    },
+    {
       "root_url": "https://raw.githubusercontent.com/bioimage-io/fiji-bioimage-io/v0.1.4/models/n2v-sem-demo",
       "name": "N2V SEM Demo",
       "description": "Demo model for denoising trained on a single SEM image with Noise2Void",
