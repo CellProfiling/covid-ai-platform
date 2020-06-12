@@ -10,6 +10,29 @@
   },
   "models": [
     {
+      "root_url": "https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/covid-tracker-react-native",
+      "name": "covid-tracker-react-native",
+      "description": "Based on symptom data collected from 2,618,862 by the COVID Symptom Study smartphone-based app, a model combining symptoms to predict probable infection of COVID-19 virus was built and predited 17.42% participants are likely to have COVID-19.",
+      "cite": [
+        {
+          "text": "Menni, C., Valdes, A.M., Freidin, M.B. et al. Real-time tracking of self-reported symptoms to predict potential COVID-19. Nat Med 2020.",
+          "doi": "https://doi.org/10.1038/s41591-020-0916-2"
+        }
+      ],
+      "authors": [
+        "Cristina Menni"
+      ],
+      "documentation": "covid-tracker-react-native.md",
+      "tags": [
+        "covid19"
+      ],
+      "covers": [
+        "covid-tracker-react-native.png"
+      ],
+      "config_url": "https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/covid-tracker-react-native/covid-tracker-react-native.mode.yaml",
+      "applications": []
+    },
+    {
       "root_url": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.1",
       "name": "U-Net DA (Domain Adaptation)",
       "description": "U-Net trained on brain vasculature segmentation data from Ludovico Silvestri's European Laboratory for Non-linear Spectroscopy (LENS). U-Net is used as the segmentation network that takes up the inputs from source and target domain, and generate the respective segmentation results at the output. To train the network, cross entropy loss between the prediction and ground truth labels is used for the source data. For the target data, image reconstrcution constraints are enforced on the segmentation outputs. Furthermore, source domain images are translated into the target domain using an adverserial paradigm, to generate auxiliary labelled data for the target domain. The labelled data thus generated are used to establish a supervised loss in the target domain.",
@@ -149,6 +172,34 @@
         "Fiji"
       ],
       "download_url": "https://github.com/deepimagej/models/releases/download/0.1/fru-net_sev_segmentation.zip"
+    },
+    {
+      "root_url": "https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/COVID19_CT",
+      "name": "COVID19_CT",
+      "description": "A model to rapidly diagnose patients who are positive for COVID-19 by integrating chest CT findings with clinical sympotoms exposure history and laboratory testing",
+      "cite": [
+        {
+          "text": "Mei, Xueyan et al. Artificial intelligence\u2013enabled rapid diagnosis of patients with COVID-19. Nat. Med. 2020.",
+          "doi": "https://doi.org/10.1038/s41591-020-0931-3"
+        }
+      ],
+      "authors": [
+        "Xueyan Mei et al."
+      ],
+      "documentation": "COVID19_CT.md",
+      "tags": [
+        "cnn",
+        "pytorch",
+        "tensorflow",
+        "keras",
+        "lung",
+        "ct"
+      ],
+      "covers": [
+        "covid19_ct.png"
+      ],
+      "config_url": "https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/COVID19_CT/COVID19_CT.model.yaml",
+      "applications": []
     },
     {
       "root_url": "https://raw.githubusercontent.com/platybrowser/platybrowser/3711f1c26e5db8c38c3faff4cccb3110560e3c67/segmentation/cells/UNet3DPlatyCellProbs.model",

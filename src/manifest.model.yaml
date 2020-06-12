@@ -47,3 +47,11 @@ models:
   config_url: https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.1/2sUNetDA.model.yaml
   applications: [Ilastik, ImJoy]
   download_url: https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.1/2sUNetDA.model.zip
+
+- COVID19_CT:
+  config_url: https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/COVID19_CT/COVID19_CT.model.yaml
+  applications: []
+
+- COVID-TRACKER-REACT-NATIVE:
+  config_url:   https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/covid-tracker-react-native/covid-tracker-react-native.mode.yaml
+  applications: []
