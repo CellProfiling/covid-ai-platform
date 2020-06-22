@@ -2,7 +2,7 @@
   "site_name": "COVID-19 Model Zoo",
   "site_icon": "🦠",
   "background_image": "static/img/corona-background.png",
-  "manifest_url": "static/test_manifest.bioimage.io.json",
+  "manifest_url": "https://raw.githubusercontent.com/CellProfiling/covid-models/master/manifest.bioimage.io.json",
   "explore_button_text": "🚀 Explore the Zoo",
   "subscribe_url": "https://docs.google.com/forms/d/e/1FAIpQLSfQhTjXOuTXZNtalprbsXMPd4ct2ydiMhlPc2lhcs6WY4yo0w/viewform?embedded=true",
   "contribute_url": "https://github.com/bioimage-io/bioimage-io-models#how-to-contribute-new-models",
