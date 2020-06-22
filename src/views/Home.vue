@@ -314,7 +314,9 @@ function normalizeItem(item) {
   }
   if (item.tags) {
     item.allLabels = item.allLabels.concat(
-      item.tags.map(tag => tag.toLowerCase())
+      item.tags
+        .filter(tag => typeof tag === "string")
+        .map(tag => tag.toLowerCase())
     );
   }
   // make it lower case and remove duplicates
@@ -372,7 +374,6 @@ export default {
     };
   },
   created: async function() {
-    window.document.title = this.siteConfig.site_name;
     try {
       let repo = "bioimage-io/bioimage-io-models";
 
@@ -436,11 +437,11 @@ export default {
           m => m.type === "application"
         );
         this.showMessage("Loading applications...");
-        loadPlugins(imjoy, applications).then(apps => {
+        loadPlugins(imjoy, applications).then(allApps => {
           this.showMessage(
-            `Successfully loaded ${Object.keys(apps).length} applications.`
+            `Successfully loaded ${Object.keys(allApps).length} applications.`
           );
-          this.allApps = apps;
+          this.allApps = allApps;
           for (let item of resourceItems) {
             // make a shallow copy or create an empty array
             const apps = (item.apps && item.apps.slice()) || [];
