@@ -8,7 +8,7 @@ An AI model zoo for COVID-19 related research
 
 ## Models
 
-A list of models can be found [here](./src/manifest.model.yaml).
+A list of models can be found [here](./src/manifest.bioimage.io.yaml).
 
 ## How to contribute new models?
 
@@ -17,7 +17,7 @@ COVID-19 model zoo is a static website, it reads a manifest file from this Githu
 Please follow the following steps:
 
  1. Fork this repo
- 1. Add your models to the `src/manifest.model.yaml` file
+ 1. Add your models to the `src/manifest.bioimage.io.yaml` file
  1. Run `python src/compile_model_manifest.py` to generate a new `manifest.model.json` with your models
  1. Commit your changes and push to your Github repo.
  1. You can preview it constructing an URL which makes COVID-19 model zoo render the page with the manifest file in your repo. The URL format is: `https://covid19ai.io?repo=YOUR_GITHUB_USER_NAME/YOUR_GITHUB_REPO`, for example: https://covid19ai.io?repo=oeway/models will point to the model manifest hosted on https://github.com/oeway/models. You can also add commit hash tag, branch name or tag after that, for example: https://covid19ai.io?repo=oeway/models/06a9ffac88.
@@ -64,11 +64,11 @@ To test with the BioEngine, you can go to https://covid19ai.io, on the menu loca
 
 ## How to submit BioEngine Apps to the website?
 
-You can submit your BioEngine App by changing the same file named `src/manifest.model.yaml` as for contributing models.
+You can submit your BioEngine App by changing the same file named `src/manifest.bioimage.io.yaml` as for contributing models.
 
 Here are the steps:
  1. Once the BioEngine App is ready, you can then push it to your Github repo and get a `raw` URL for the file.
- 1. Define a key in the `applications` section in `src/manifest.model.yaml`, and set the value as the `raw` URL to the BioEngine app file.
+ 1. Define a key in the `applications` section in `src/manifest.bioimage.io.yaml`, and set the value as the `raw` URL to the BioEngine app file.
  1. For all the models which your app can digest, you can add your app key to the `applications` field of the model.
  1. The procedure later are the same as contributing models, you can basically: run `python src/compile_model_manifest.py` to generate a new `manifest.model.json`, commit and push to your Github repo, preview it on covid19ai.io with `https://covid19ai.io?repo=YOUR_GITHUB_USER_NAME/YOUR_GITHUB_REPO` and optionally send us a Pull Request.
 
@@ -78,4 +78,3 @@ Here are the steps:
 If you are developing or maintaining a software which can digest models in the model description format used in the BioImage model zoo, it's easy to fetch the latest model list (along with the other meta information) from this url `https://raw.githubusercontent.com/CellProfiling/covid19ai/master/manifest.model.json`. 
 
 By fetching the content of this JSON file, you will get all the models from the BioImage model zoo, and you can filter it based on your own supported framework, programming language etc.
-
