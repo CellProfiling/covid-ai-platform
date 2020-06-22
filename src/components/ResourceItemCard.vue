@@ -131,10 +131,10 @@ export default {
         }
       } else {
         let sum = 0;
-        if(this.resourceItem.name)
-        for (let i = 0; i < this.resourceItem.name.length; i++) {
-          sum = sum + this.resourceItem.name.charCodeAt(i);
-        }
+        if (this.resourceItem.name)
+          for (let i = 0; i < this.resourceItem.name.length; i++) {
+            sum = sum + this.resourceItem.name.charCodeAt(i);
+          }
         const selectedIcon = anonymousAnimals[sum % anonymousAnimals.length];
         return {
           type: "animal",
