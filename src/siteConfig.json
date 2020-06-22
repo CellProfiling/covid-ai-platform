@@ -1,0 +1,28 @@
+{
+  "site_name": "COVID-19 Model Zoo",
+  "site_icon": "🦠",
+  "background_image": "static/img/corona-background.png",
+  "manifest_url": "static/test_manifest.bioimage.io.json",
+  "explore_button_text": "🚀 Explore the Zoo",
+  "subscribe_url": "https://docs.google.com/forms/d/e/1FAIpQLSfQhTjXOuTXZNtalprbsXMPd4ct2ydiMhlPc2lhcs6WY4yo0w/viewform?embedded=true",
+  "contribute_url": "https://github.com/bioimage-io/bioimage-io-models#how-to-contribute-new-models",
+  "footer_github": {
+    "url": "https://github.com/bioimage-io/bioimage-io-models",
+    "label": "Model Repository"
+  },
+  "splash_title": "",
+  "splash_subtitle": "Models, Datasets, Applications for fighting COVID-19",
+  "splash_feature_list": [
+    "Try model instantly with the BioEngine",
+    "Contribute your models via Github",
+    "Link models to datasets and applications"
+  ],
+  "item_lists": [
+    {
+      "name": "Models",
+      "type": "model"
+    },
+    { "name": "Applications", "type": "application" },
+    { "name": "Datasets", "type": "dataset" }
+  ]
+}
