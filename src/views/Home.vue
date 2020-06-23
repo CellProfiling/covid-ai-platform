@@ -102,6 +102,8 @@
       :fullLabelList="fullLabelList"
       :tagCategories="tagCategories"
       :type="currentList && currentList.type"
+      :showDisplayMode="screenWidth > 700"
+      @display-mode-change="displayModeChanged"
     ></resource-item-selector>
     <div
       v-if="currentList && currentList.type === 'application'"
@@ -119,7 +121,9 @@
     <resource-item-list
       @show-resource-item-info="showResourceItemInfo"
       :allItems="selectedItems"
+      :displayMode="screenWidth > 700 ? displayMode : 'card'"
     />
+    <br />
 
     <footer class="footer">
       <div class="columns is-multiline">
@@ -154,9 +158,12 @@
       <div
         v-if="selectedDialogWindow"
         @dblclick="maximizeDialogWindow()"
-        class="drag-handle dialog-header"
+        :class="{ 'drag-handle': !isTouchDevice }"
+        class=" dialog-header"
       >
-        <span class="noselect"> {{ selectedDialogWindow.name }}</span>
+        <span class="noselect dialog-title">
+          {{ selectedDialogWindow.name }}</span
+        >
         <button
           @click="closeDialogWindow(selectedDialogWindow)"
           class="noselect dialog-control-button"
@@ -165,6 +172,7 @@
           x
         </button>
         <button
+          v-if="screenWidth > 700"
           @click="minimizeDialogWindow()"
           class="noselect dialog-control-button"
           style="background:#00cdff61;left:40px;"
@@ -172,6 +180,7 @@
           -
         </button>
         <button
+          v-if="screenWidth > 700"
           @click="maximizeDialogWindow()"
           class="noselect dialog-control-button"
           style="background:#00cdff61;left:80px;"
@@ -223,8 +232,12 @@
       draggable=".drag-handle"
       :scrollable="true"
     >
-      <div @dblclick="maximizeInfoWindow()" class="drag-handle dialog-header">
-        <span class="noselect"> {{ infoDialogTitle }}</span>
+      <div
+        @dblclick="maximizeInfoWindow()"
+        :class="{ 'drag-handle': !isTouchDevice }"
+        class="dialog-header"
+      >
+        <span class="noselect dialog-title"> {{ infoDialogTitle }}</span>
         <button
           @click="closeInfoWindow()"
           class="noselect dialog-control-button"
@@ -233,6 +246,7 @@
           x
         </button>
         <button
+          v-if="screenWidth > 700"
           @click="maximizeInfoWindow()"
           class="noselect dialog-control-button"
           style="background:#00cdff61;left:40px;"
@@ -267,7 +281,7 @@ import ResourceItemSelector from "@/components/ResourceItemSelector.vue";
 import ResourceItemList from "@/components/ResourceItemList.vue";
 import ResourceItemInfo from "@/components/ResourceItemInfo.vue";
 import About from "@/views/About.vue";
-import siteConfig from "../siteConfig";
+import siteConfig from "../../site.config.json";
 import {
   setupBioEngine,
   loadPlugins,
@@ -283,7 +297,21 @@ import {
   debounce
 } from "../utils";
 
-function normalizeItem(item) {
+// set default values for table_view
+siteConfig.table_view = siteConfig.table_view || {
+  columns: ["name", "authors", "badges", "apps"]
+};
+
+const isTouchDevice = (function() {
+  try {
+    document.createEvent("TouchEvent");
+    return true;
+  } catch (e) {
+    return false;
+  }
+})();
+
+function normalizeItem(self, item) {
   item.covers = item.covers || [];
   item.authors = item.authors || [];
   item.description = item.description || "";
@@ -324,6 +352,13 @@ function normalizeItem(item) {
     new Set(item.allLabels.map(label => label.toLowerCase()))
   );
   item.apps = [];
+  if (item.source)
+    item.apps.unshift({
+      name: "Source",
+      icon: "code-tags",
+      show_on_hover: true,
+      url: item.source
+    });
   if (item.download_url)
     item.apps.unshift({
       name: "Download",
@@ -338,6 +373,48 @@ function normalizeItem(item) {
       url: item.git_repo,
       show_on_hover: true
     });
+  item.badges = [];
+  if (item.weights) {
+    item.badges.unshift({
+      body: "weights",
+      body_type: "is-dark",
+      ext: Object.keys(item.weights).length,
+      ext_type: "is-primary",
+      run() {
+        console.log(item.weights);
+        self.showResourceItemInfo(item, "weights");
+      }
+    });
+  }
+  if (item.files) {
+    item.badges.unshift({
+      body: "files",
+      ext: Object.keys(item.files).length,
+      ext_type: "is-primary",
+      run() {
+        console.log(item.files);
+      }
+    });
+  }
+  if (item.license) {
+    item.badges.unshift({
+      body: "license",
+      ext: item.license,
+      ext_type: "is-info"
+    });
+  }
+  if (item.type === "model" && item.co2) {
+    item.badges.unshift({
+      body: "CO2",
+      ext: item.co2,
+      ext_type: "is-success",
+      run() {
+        alert(
+          `SAVE THE EARTH: The carbon footprint for training this model is around ${item.co2} lbs, reusing existing models can help save the earth from climate change.`
+        );
+      }
+    });
+  }
 }
 
 export default {
@@ -350,6 +427,7 @@ export default {
   },
   data() {
     return {
+      isTouchDevice: isTouchDevice,
       siteConfig: siteConfig,
       resourceItems: null,
       selectedItems: null,
@@ -370,7 +448,8 @@ export default {
       screenWidth: 1000,
       showInfoDialogMode: null,
       infoDialogTitle: "",
-      currentList: null
+      currentList: null,
+      displayMode: "card"
     };
   },
   created: async function() {
@@ -398,7 +477,7 @@ export default {
       const resourceItems = repo_manifest.resources;
       for (let item of resourceItems) {
         item.repo = repo;
-        normalizeItem(item);
+        normalizeItem(this, item);
         if (!item.source.startsWith("http"))
           item.source = concatAndResolveUrl(item.root_url, item.source);
       }
@@ -449,7 +528,6 @@ export default {
               apps.unshift({
                 name: "Run",
                 icon: "play",
-                show_on_hover: true,
                 run() {
                   runManyModels(app, item);
                 }
@@ -531,6 +609,9 @@ export default {
     window.removeEventListener("resize", this.updateSize);
   },
   methods: {
+    displayModeChanged(mode) {
+      this.displayMode = mode;
+    },
     addWindow(w) {
       if (this.selectedDialogWindow) {
         this.selectedWindowsStack.push(this.selectedDialogWindow);
@@ -564,8 +645,9 @@ export default {
       if (this.screenWidth < 700) this.infoDialogFullscreen = true;
       this.$modal.show("info-dialog");
     },
-    showResourceItemInfo(mInfo) {
+    showResourceItemInfo(mInfo, focus) {
       this.showInfoDialogMode = "model";
+      mInfo._focus = focus;
       this.selectedResourceItem = mInfo;
       this.infoDialogTitle = this.selectedResourceItem.name;
       if (this.screenWidth < 700) this.infoDialogFullscreen = true;
@@ -694,7 +776,9 @@ export default {
 }
 .dialog-control-button {
   cursor: pointer;
-  width: 34px;
+  width: 34px !important;
+  min-width: 34px !important;
+  max-width: 34px !important;
   height: 36px;
   line-height: 30px;
   padding-bottom: 7px;
@@ -763,7 +847,13 @@ export default {
   font-size: 3em;
   margin-left: 10px;
 }
+.dialog-title {
+  font-size: 1.4rem;
+}
 @media screen and (max-width: 768px) {
+  .dialog-title {
+    font-size: 1.1rem;
+  }
   .site-title {
     font-size: 2em !important;
   }
@@ -782,5 +872,10 @@ export default {
   .explore-btn {
     font-size: 1.1rem !important;
   }
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 </style>
