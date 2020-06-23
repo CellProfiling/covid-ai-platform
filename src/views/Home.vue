@@ -142,13 +142,15 @@
         </div>
         <div v-if="siteConfig.supported_by">
           <a :href="siteConfig.supported_by.scilifelab" target="_blank">
-            <img class="funding_img"
+            <img
+              class="funding_img"
               src="/static/img/scilifelab.png"
               style="width: 150px;margin-right:3px;"
             />
           </a>
           <a :href="siteConfig.supported_by.scilifelab" target="_blank">
-            <img class="funding_img"
+            <img
+              class="funding_img"
               src="/static/img/kaw.png"
               style="width: 150px;margin-right:3px;"
             />
