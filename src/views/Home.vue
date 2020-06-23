@@ -850,7 +850,7 @@ export default {
   opacity: 0.9;
   width: 60%;
   transition: 0.9s ease;
-  max-height: 20%;
+  max-height: 60%;
   max-width: 100%;
   margin-right: 200px;
   object-fit: content-box;
