@@ -148,7 +148,7 @@
               style="width: 150px;margin-right:3px;"
             />
           </a>
-          <a :href="siteConfig.supported_by.scilifelab" target="_blank">
+          <a :href="siteConfig.supported_by.kaw" target="_blank">
             <img
               class="funding_img"
               src="/static/img/kaw.png"
