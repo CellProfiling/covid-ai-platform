@@ -84,12 +84,7 @@
             sortable
           >
             <template v-for="app in props.row.apps">
-              <b-tooltip
-                :class="{ 'hover-show': app.show_on_hover && !isTouchDevice }"
-                :key="app.name"
-                :label="app.name"
-                position="is-top"
-              >
+              <b-tooltip :key="app.name" :label="app.name" position="is-top">
                 <b-button
                   rounded
                   :tag="app.url ? 'a' : 'button'"
@@ -127,6 +122,7 @@
 import Vue from "vue";
 import ResourceItemCard from "./ResourceItemCard";
 import siteConfig from "../../site.config.json";
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 Vue.component("label-selector", {
   props: ["all-labels"],
@@ -159,6 +155,7 @@ export default {
   },
   data() {
     return {
+      isSafari: isSafari,
       siteConfig: siteConfig
     };
   },
