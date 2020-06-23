@@ -137,8 +137,22 @@
               style="width: 36px; height:36px;margin-right:3px; margin-bottom:-8px;"
             /><span style="font-size:1.3rem;">{{
               siteConfig.footer_github.label
-            }}</span></a
-          >
+            }}</span>
+          </a>
+        </div>
+        <div v-if="siteConfig.supported_by">
+          <a :href="siteConfig.supported_by.scilifelab" target="_blank">
+            <img class="funding_img"
+              src="/static/img/scilifelab.png"
+              style="width: 150px;margin-right:3px;"
+            />
+          </a>
+          <a :href="siteConfig.supported_by.scilifelab" target="_blank">
+            <img class="funding_img"
+              src="/static/img/kaw.png"
+              style="width: 150px;margin-right:3px;"
+            />
+          </a>
         </div>
       </div>
     </footer>
@@ -827,6 +841,17 @@ export default {
   max-height: 50%;
   max-width: 100%;
   object-fit: contain;
+}
+.funding_img {
+  position: relative;
+  left: 850px;
+  opacity: 0.9;
+  width: 60%;
+  transition: 0.9s ease;
+  max-height: 20%;
+  max-width: 100%;
+  margin-right: 200px;
+  object-fit: content-box;
 }
 .hero:hover .background-img {
   width: 65%;

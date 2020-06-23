@@ -20,6 +20,10 @@
     "url": "https://github.com/CellProfiling/covid-models",
     "label": "COVID-19 Model Repository"
   },
+  "supported_by": {
+    "scilifelab": "https://www.scilifelab.se/",
+    "kaw": "https://kaw.wallenberg.org/"
+  },
   "model_repo": "CellProfiling/covid-models",
   "splash_title": "COVID-19 AI Model Zoo",
   "splash_subtitle": "AI Models, Datasets, Applications for Fighting COVID-19",
