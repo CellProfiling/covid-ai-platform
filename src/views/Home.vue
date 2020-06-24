@@ -138,7 +138,7 @@
         <div v-for="item in siteConfig.footer" :key="item.label" class="column">
           <b-tooltip
             :label="item.tooltip"
-            position="is-right"
+            position="is-top"
             :href="item.url"
             target="_blank"
           >
