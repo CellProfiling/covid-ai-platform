@@ -16,11 +16,7 @@
   "explore_button_text": "🚀 Explore the Zoo",
   "subscribe_url": "https://docs.google.com/forms/d/e/1FAIpQLSeS1TV3QkTfsIXNsKGQ3bzJuAxprCkJ4VHX1DDNoaDM_mhwPg/viewform?embedded=true",
   "contribute_url": "https://github.com/CellProfiling/covid-models#how-to-contribute-new-models",
-  "footer_github": {
-    "url": "https://github.com/CellProfiling/covid-models",
-    "label": "COVID-19 Model Repository"
-  },
-  "footer__covid19ai": [
+  "footer_covid19ai": [
     {
       "label": "Github",
       "tooltip": "COVID-19 Model Repository",
