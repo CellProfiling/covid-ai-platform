@@ -16,10 +16,33 @@
   "explore_button_text": "🚀 Explore the Zoo",
   "subscribe_url": "https://docs.google.com/forms/d/e/1FAIpQLSeS1TV3QkTfsIXNsKGQ3bzJuAxprCkJ4VHX1DDNoaDM_mhwPg/viewform?embedded=true",
   "contribute_url": "https://github.com/CellProfiling/covid-models#how-to-contribute-new-models",
-  "footer_github": {
-    "url": "https://github.com/CellProfiling/covid-models",
-    "label": "COVID-19 Model Repository"
-  },
+  "footer__covid19ai": [
+    {
+      "label": "Github",
+      "tooltip": "COVID-19 Model Repository",
+      "logo": "/static/img/github.svg",
+      "url": "https://github.com/CellProfiling/covid-models"
+    },
+    {
+      "label": "CellPro",
+      "tooltip": "Cell Profiling",
+      "logo": "/static/img/github.svg",
+      "url": "https://cellprofiling.org"
+    },
+    {
+      "label": "SciLifeLab",
+      "tooltip": "Science for Life Laboratory",
+      "logo": "/static/img/scilifelab.png",
+      "url": "https://www.scilifelab.se"
+    },
+    {
+      "label": "KAW",
+      "tooltip": "Knut and Alice Wallenberg Foundation",
+      "logo": "/static/img/kaw.png",
+      "url": "https://kaw.wallenberg.org"
+    }
+  ],
+  "footer_covid19ai_note": "The COVID19AI.IO platform is kindly supported by Science for Life Laboratory and the Knut and Alice Wallenberg Foundation",
   "model_repo": "CellProfiling/covid-models",
   "splash_title": "COVID-19 AI Model Zoo",
   "splash_subtitle": "AI Models, Datasets, Applications for Fighting COVID-19",
