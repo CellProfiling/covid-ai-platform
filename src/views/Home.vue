@@ -134,19 +134,15 @@
     <br />
 
     <footer class="footer">
-      <div class="columns is-multiline">
-        <div
-          v-if="siteConfig.footer_github"
-          class="column is-4-desktop is-3-widescreen is-half-tablet"
-        >
-          <a :href="siteConfig.footer_github.url" target="_blank">
+      <div class="columns is-moible" v-if="siteConfig.footer">
+        <div v-for="item in siteConfig.footer" :key="item.label" class="column" >
+          <b-tooltip :label="item.tooltip" position="is-right" :href="item.url" target="_blank">
             <img
-              src="/static/img/github.svg"
-              style="width: 36px; height:36px;margin-right:3px; margin-bottom:-8px;"
-            /><span style="font-size:1.3rem;">{{
-              siteConfig.footer_github.label
-            }}</span></a
-          >
+              :src="item.logo"
+              style="height: 55px;"
+            />
+          </b-tooltip>
+
         </div>
       </div>
     </footer>
