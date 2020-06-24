@@ -22,7 +22,7 @@
       "logo": "/static/img/github.svg",
       "url": "https://github.com/CellProfiling/covid-models"
     },
-    { "label": "LundergLab",
+    { "label": "LundbergLab",
       "tooltip": "Lundberg Lab",
       "logo": "/static/img/lundberglab.png",
       "url": "https://cellprofiling.org"
