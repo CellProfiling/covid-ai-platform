@@ -4,8 +4,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CNAME"
   },
   {
-    "revision": "5f54b2c0ae7c77ceabef",
-    "url": "/css/app.7d8f5a83.css"
+    "revision": "f03d327ed86eb2526ff5",
+    "url": "/css/app.7319aa74.css"
   },
   {
     "revision": "bdf21440013c370bc8ef",
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/index.ejs"
   },
   {
-    "revision": "921dab48466d424942d6c22d30b84138",
+    "revision": "7857777d58ed6f7bf7c0dd6bc7bd03ea",
     "url": "/index.html"
   },
   {
-    "revision": "5f54b2c0ae7c77ceabef",
-    "url": "/js/app.f541a23f.js"
+    "revision": "f03d327ed86eb2526ff5",
+    "url": "/js/app.9b4f1ff2.js"
   },
   {
     "revision": "bdf21440013c370bc8ef",
@@ -326,6 +326,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f0d21da3f74ffbbcc644dafd7b957e57",
     "url": "/static/img/github.svg"
+  },
+  {
+    "revision": "0a6000912ecf8830e9ac0cfbd8ffc5bb",
+    "url": "/static/img/kaw.png"
+  },
+  {
+    "revision": "26088902eab7ce36a08cbc757c2b6ba1",
+    "url": "/static/img/lundberglab.png"
+  },
+  {
+    "revision": "946941700b749c222c3bde23cfe7edb3",
+    "url": "/static/img/scilifelab.png"
   },
   {
     "revision": "19c9badcf53e14e3deb0954e322c93d4",
