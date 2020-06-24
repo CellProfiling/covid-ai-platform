@@ -22,9 +22,9 @@
       "logo": "/static/img/github.svg",
       "url": "https://github.com/CellProfiling/covid-models"
     },
-    { "label": "CellPro",
-      "tooltip": "Cell Profiling",
-      "logo": "/static/img/cellprofiling.png",
+    { "label": "LundergLab",
+      "tooltip": "Lundberg Lab",
+      "logo": "/static/img/lundberglab.png",
       "url": "https://cellprofiling.org"
     },
     { "label": "SciLifeLab",
