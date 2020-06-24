@@ -36,6 +36,7 @@
       "url": "https://kaw.wallenberg.org"
     }
   ],
+  "footer-note": "The COVID19AI.IO platform is kindly supported by Science for Life Laboratory and the Knut and Alice Wallenberg Foundation",
   "model_repo": "CellProfiling/covid-models",
   "splash_title": "COVID-19 AI Model Zoo",
   "splash_subtitle": "AI Models, Datasets, Applications for Fighting COVID-19",
