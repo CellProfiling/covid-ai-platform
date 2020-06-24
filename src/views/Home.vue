@@ -135,18 +135,23 @@
 
     <footer class="footer">
       <div class="columns is-moible is-centered" v-if="siteConfig.footer">
-        <div v-for="item in siteConfig.footer" :key="item.label" class="column is-one-quarter">
-          <b-tooltip
-            :label="item.tooltip"
-            position="is-top"
-          ><a :href="item.url" target="_blank">
-            <img :src="item.logo" style="height: 55px;"/>
-          </a>
+        <div
+          v-for="item in siteConfig.footer"
+          :key="item.label"
+          class="column is-one-quarter"
+        >
+          <b-tooltip :label="item.tooltip" position="is-top"
+            ><a :href="item.url" target="_blank">
+              <img :src="item.logo" style="height: 55px;" />
+            </a>
           </b-tooltip>
         </div>
       </div>
       <div style="text-align: center">
-        <p>The COVID19AI.IO platform is kindly supported by the Science for Life Laboratory and the Knut and Alice Wallenberg Foundation</p>
+        <p>
+          The COVID19AI.IO platform is kindly supported by the Science for Life
+          Laboratory and the Knut and Alice Wallenberg Foundation
+        </p>
       </div>
     </footer>
     <modal
