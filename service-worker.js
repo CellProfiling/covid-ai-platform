@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.41eb50ea5ec9ec2fd649ebaea2a5730d.js"
+  "/precache-manifest.d0dd55513e0fb341081bdcd2d2a809da.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "covid19ai"});
+workbox.core.setCacheNameDetails({prefix: "bioimage"});
 
 workbox.core.skipWaiting();
 
