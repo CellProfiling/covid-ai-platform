@@ -135,14 +135,15 @@
 
     <footer class="footer">
       <div class="columns is-moible" v-if="siteConfig.footer">
-        <div v-for="item in siteConfig.footer" :key="item.label" class="column" >
-          <b-tooltip :label="item.tooltip" position="is-right" :href="item.url" target="_blank">
-            <img
-              :src="item.logo"
-              style="height: 55px;"
-            />
+        <div v-for="item in siteConfig.footer" :key="item.label" class="column">
+          <b-tooltip
+            :label="item.tooltip"
+            position="is-right"
+            :href="item.url"
+            target="_blank"
+          >
+            <img :src="item.logo" style="height: 55px;" />
           </b-tooltip>
-
         </div>
       </div>
     </footer>
