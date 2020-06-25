@@ -17,7 +17,7 @@
   "subscribe_url": "https://docs.google.com/forms/d/e/1FAIpQLSeS1TV3QkTfsIXNsKGQ3bzJuAxprCkJ4VHX1DDNoaDM_mhwPg/viewform?embedded=true",
   "contribute_url": "https://github.com/CellProfiling/covid-models#how-to-contribute-new-models",
   "footer": [
-    { "label": "Github",
+    { "label": "COVID-19 Model Repository",
       "tooltip": "COVID-19 Model Repository",
       "logo": "/static/img/github.svg",
       "url": "https://github.com/CellProfiling/covid-models"
@@ -32,7 +32,7 @@
       "logo": "/static/img/scilifelab.png",
       "url": "https://www.scilifelab.se"
     },
-    { "label": "KAW",
+    { "label": "Knut and Alice Wallenberg Foundation",
       "tooltip": "Knut and Alice Wallenberg Foundation",
       "logo": "/static/img/kaw.png",
       "url": "https://kaw.wallenberg.org"
