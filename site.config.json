@@ -19,7 +19,7 @@
   "footer": [
     { "label": "COVID-19 Model Repository",
       "tooltip": "COVID-19 Model Repository",
-      "logo": "/static/img/github.svg",
+      "logo": "/static/img/github.png",
       "url": "https://github.com/CellProfiling/covid-models"
     },
     { "label": "Lundberg Lab",
