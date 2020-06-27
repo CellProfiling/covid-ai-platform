@@ -4,8 +4,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CNAME"
   },
   {
-    "revision": "b808cc453cfbe44cd6e0",
-    "url": "/css/app.7319aa74.css"
+    "revision": "b536cfe012042dd6c209",
+    "url": "/css/app.a727ed2b.css"
   },
   {
     "revision": "bdf21440013c370bc8ef",
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/index.ejs"
   },
   {
-    "revision": "f76ebf451e778fa6d6ce02edab102d6d",
+    "revision": "703a09eb77878299410b5490ddd584fd",
     "url": "/index.html"
   },
   {
-    "revision": "b808cc453cfbe44cd6e0",
-    "url": "/js/app.86784e67.js"
+    "revision": "b536cfe012042dd6c209",
+    "url": "/js/app.60691a6e.js"
   },
   {
     "revision": "bdf21440013c370bc8ef",
@@ -322,6 +322,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7b21a1811880e0a6e55c081c0e581a7f",
     "url": "/static/img/corona-background.png"
+  },
+  {
+    "revision": "e1dd5654c3c8bcca4df6f56705b14a3c",
+    "url": "/static/img/github.png"
   },
   {
     "revision": "f0d21da3f74ffbbcc644dafd7b957e57",
