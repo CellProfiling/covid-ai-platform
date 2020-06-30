@@ -1,0 +1,52 @@
+name: COVID-19 AI Model Repository
+description:  COVID-19 AI Model Repository.
+version: 0.2.0
+url_root: https://raw.githubusercontent.com/CellProfiling/covid19ai.io/master
+
+application:
+  - id: Ilastik Model Preview
+    source: https://raw.githubusercontent.com/bioimage-io/bioimage-io-models/master/src/Ilastik-app.imjoy.html
+  - id: HPA-Classification
+    source: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/HPA-Classification.imjoy.html
+  
+
+dataset:
+- id: dummy_zarr
+  source: https://gist.githubusercontent.com/oeway/3dcbd79cd29da42be13a7e3bc0f9ca12/raw/dummy_zarr.dataset.yaml
+
+notebook:
+- id: vitessce-image-viewer
+  source: https://gist.githubusercontent.com/oeway/582856630a0aed4d4d221e54df1b3ece/raw/vitessce-image-viewer.notebook.yaml
+
+model:
+- id: HPAShuffleNetV2
+  source: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.yaml
+  links: [HPA-Classification]
+
+- id: UNet2DNucleiBroad
+  source: https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml
+  links: [Ilastik Model Preview]
+
+- id: COVID19 CT
+  source: https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/COVID19_CT/COVID19_CT.model.yaml
+  links: []
+
+- id: COVID TRACKER REACT NATIVE
+  source:   https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/covid-tracker-react-native/covid-tracker-react-native.mode.yaml
+  links: []
+
+- id: RadLogics
+  source:   https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/RadLogics/RadLogics.model.yaml
+  links: []
+
+- id: TianjinMUC
+  source:   https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/TianjinMUC/TianjinMUC.model.yaml
+  links: []
+
+- id: Cellpose
+  source: https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/Cellpose/Cellpose.model.yaml
+  links: []
+
+- id: OpenCovidDetector
+  source: https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/OpenCovidDetector/OpenCovidDetector.model.yaml
+  links: []
