@@ -1,9 +1,8 @@
-# covid-model-zoo
+# COVID19AI.IO
 
 Note: This website is under construction.
 
-An AI model zoo for COVID-19 related research
-
+AI models, datasets and applications for COVID-19 related research
 
 
 ## Models
