@@ -12,34 +12,38 @@
   "og_image": "https://covid19ai.io/static/img/covid19ai-banner.png",
   "og_description": "An AI Model Zoo for Fighting COVID-19",
   "background_image": "static/img/corona-background.png",
-  "manifest_url": "https://raw.githubusercontent.com/CellProfiling/covid-models/master/manifest.bioimage.io.json",
+  "manifest_url": "https://raw.githubusercontent.com/CellProfiling/covid19ai.io/master/manifest.bioimage.io.json",
   "explore_button_text": "🚀 Explore the Zoo",
   "subscribe_url": "https://docs.google.com/forms/d/e/1FAIpQLSeS1TV3QkTfsIXNsKGQ3bzJuAxprCkJ4VHX1DDNoaDM_mhwPg/viewform?embedded=true",
-  "contribute_url": "https://github.com/CellProfiling/covid-models#how-to-contribute-new-models",
+  "contribute_url": "https://raw.githubusercontent.com/CellProfiling/covid19ai.io/master/contribute.md",
   "footer": [
-    { "label": "COVID-19 Model Repository",
+    {
+      "label": "COVID-19 Model Repository",
       "tooltip": "COVID-19 Model Repository",
       "logo": "/static/img/github.png",
-      "url": "https://github.com/CellProfiling/covid-models"
+      "url": "https://github.com/CellProfiling/covid19ai.io"
     },
-    { "label": "Lundberg Lab",
+    {
+      "label": "Lundberg Lab",
       "tooltip": "Lundberg Lab",
       "logo": "/static/img/lundberglab.png",
       "url": "https://cellprofiling.org"
     },
-    { "label": "SciLifeLab",
+    {
+      "label": "SciLifeLab",
       "tooltip": "Science for Life Laboratory",
       "logo": "/static/img/scilifelab.png",
       "url": "https://www.scilifelab.se"
     },
-    { "label": "Knut and Alice Wallenberg Foundation",
+    {
+      "label": "Knut and Alice Wallenberg Foundation",
       "tooltip": "Knut and Alice Wallenberg Foundation",
       "logo": "/static/img/kaw.png",
       "url": "https://kaw.wallenberg.org"
     }
   ],
   "footnote": "The COVID19AI.IO platform is kindly supported by the Science for Life Laboratory and the Knut and Alice Wallenberg Foundation",
-  "model_repo": "CellProfiling/covid-models",
+  "model_repo": "CellProfiling/covid19ai.io",
   "splash_title": "COVID-19 AI Model Zoo",
   "splash_subtitle": "AI Models, Datasets, Applications for Fighting COVID-19",
   "splash_feature_list": [
@@ -47,12 +51,57 @@
     "Contribute your models via Github",
     "Link models to datasets and applications"
   ],
-  "item_lists": [
+  "enable_comment": true,
+  "table_view": {
+    "columns": [
+      "name",
+      "authors",
+      "badges",
+      "apps"
+    ]
+  },
+  "attachment_table": {
+    "columns": [
+      {
+        "field": "name",
+        "label": "Name",
+        "width": 80,
+        "sortable": true
+      },
+      {
+        "field": "timestamp",
+        "label": "Timestamp",
+        "class": "tag is-success",
+        "sortable": true
+      },
+      {
+        "field": "source",
+        "label": "Source",
+        "type": "url",
+        "text": "download",
+        "class": "button is-small"
+      }
+    ],
+    "detailed": true,
+    "detailed_image": null,
+    "detailed_body": "description"
+  },
+  "resource_categories": [
     {
       "name": "Models",
       "type": "model"
     },
-    { "name": "Applications", "type": "application" },
-    { "name": "Datasets", "type": "dataset" }
+    {
+      "name": "Datasets",
+      "type": "dataset"
+    },
+    {
+      "name": "Applications",
+      "type": "application"
+    },
+    {
+      "name": "Notebooks",
+      "type": "notebook"
+    }
   ]
 }
