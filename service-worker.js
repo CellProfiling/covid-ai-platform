@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.019c5d1bc89a1ae3214d7cd16f061434.js"
+  "/precache-manifest.7b587113010ea5d6b3346cbaeef5a315.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "bioimage"});
