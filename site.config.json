@@ -89,19 +89,23 @@
   "resource_categories": [
     {
       "name": "Models",
-      "type": "model"
+      "type": "model",
+      "description": "List AI models"
     },
     {
       "name": "Datasets",
-      "type": "dataset"
+      "type": "dataset",
+      "description": "List datasets"
     },
     {
       "name": "Applications",
-      "type": "application"
+      "type": "application",
+      "description": "List software, web apps and utility tools"
     },
     {
       "name": "Notebooks",
-      "type": "notebook"
+      "type": "notebook",
+      "description": "List Jupyter notebooks/Colab for models, workflows"
     }
   ]
 }
