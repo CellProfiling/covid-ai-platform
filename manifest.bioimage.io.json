@@ -87,9 +87,9 @@
       "source": "https://raw.githubusercontent.com/CellProfiling/cellpro-imjoy-plugins/master/src/Covid19ImageAnnotator.imjoy.html",
       "icon": "extension",
       "name": "Covid19ImageAnnotator",
-      "version": "0.2.40",
+      "version": "0.2.41",
       "api_version": "0.1.7",
-      "description": "Image annotations for Covid19 interacting host proteins screening",
+      "description": "Image annotator for Covid19 interacting host proteins mapping",
       "requirements": [
         "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js",
         "https://static.imjoy.io/spectre.css/spectre.min.css",
@@ -104,7 +104,7 @@
       "env": "",
       "tags": [],
       "covers": [
-        "https://github.com/haoxusci/covid19ai-models/blob/master/images/covid_image_annotator.gif"
+        "https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/images/covid_image_annotator.gif"
       ],
       "badges": [],
       "authors": []
@@ -150,9 +150,9 @@
         "Bo Xu"
       ],
       "tags": [
+        "CT",
         "covid19",
-        "Inception",
-        "CT"
+        "Inception"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -184,9 +184,9 @@
         "Eliot Siegel"
       ],
       "tags": [
-        "covid19",
         "resnet-50",
         "CT",
+        "covid19",
         "unet"
       ],
       "format_version": "0.1.0",
@@ -222,8 +222,8 @@
         "Jianjiang Feng"
       ],
       "tags": [
-        "covid19",
-        "CT"
+        "CT",
+        "covid19"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -369,13 +369,13 @@
         "Yang Yang"
       ],
       "tags": [
-        "pytorch",
+        "CT",
         "cnn",
         "keras",
+        "lung",
         "covid19",
-        "CT",
-        "tensorflow",
-        "lung"
+        "pytorch",
+        "tensorflow"
       ],
       "format_version": "0.1.0",
       "covers": [
