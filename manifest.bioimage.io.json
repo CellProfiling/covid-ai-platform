@@ -87,9 +87,9 @@
       "source": "https://raw.githubusercontent.com/CellProfiling/cellpro-imjoy-plugins/master/src/Covid19ImageAnnotator.imjoy.html",
       "icon": "extension",
       "name": "Covid19ImageAnnotator",
-      "version": "0.2.39",
+      "version": "0.2.40",
       "api_version": "0.1.7",
-      "description": "Annotate images for Covid image classification",
+      "description": "Image annotations for Covid19 interacting host proteins screening",
       "requirements": [
         "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js",
         "https://static.imjoy.io/spectre.css/spectre.min.css",
@@ -103,7 +103,9 @@
       "dependencies": [],
       "env": "",
       "tags": [],
-      "covers": [],
+      "covers": [
+        "https://github.com/haoxusci/covid19ai-models/blob/master/images/covid_image_annotator.gif"
+      ],
       "badges": [],
       "authors": []
     },
@@ -149,8 +151,8 @@
       ],
       "tags": [
         "covid19",
-        "CT",
-        "Inception"
+        "Inception",
+        "CT"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -182,9 +184,9 @@
         "Eliot Siegel"
       ],
       "tags": [
-        "CT",
-        "resnet-50",
         "covid19",
+        "resnet-50",
+        "CT",
         "unet"
       ],
       "format_version": "0.1.0",
@@ -237,8 +239,8 @@
         "Perkin Elmer"
       ],
       "tags": [
-        "OME-TIFF",
-        "covid19"
+        "covid19",
+        "OME-TIFF"
       ],
       "license": "CC-BY 4.0",
       "download_url": "https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/PKI_scans/LuCa-7color_Scan1.qptiff",
@@ -314,8 +316,8 @@
         "Marius Pachitariu"
       ],
       "tags": [
-        "segmentation",
-        "covid19"
+        "covid19",
+        "segmentation"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -367,13 +369,13 @@
         "Yang Yang"
       ],
       "tags": [
-        "lung",
-        "tensorflow",
-        "cnn",
-        "covid19",
         "pytorch",
+        "cnn",
+        "keras",
+        "covid19",
         "CT",
-        "keras"
+        "tensorflow",
+        "lung"
       ],
       "format_version": "0.1.0",
       "covers": [
