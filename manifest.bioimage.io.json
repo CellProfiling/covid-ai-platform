@@ -122,9 +122,9 @@
         "Bo Xu"
       ],
       "tags": [
-        "covid19",
+        "CT",
         "Inception",
-        "CT"
+        "covid19"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -156,10 +156,10 @@
         "Eliot Siegel"
       ],
       "tags": [
-        "covid19",
         "unet",
         "resnet-50",
-        "CT"
+        "CT",
+        "covid19"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -194,8 +194,8 @@
         "Jianjiang Feng"
       ],
       "tags": [
-        "covid19",
-        "CT"
+        "CT",
+        "covid19"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -222,6 +222,33 @@
       ],
       "links": [
         "vizarr"
+      ]
+    },
+    {
+      "type": "model",
+      "root_url": "https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/Covid19_Interacting_Host_Proteins_Mapping",
+      "id": "Covid19_Interacting_Host_Proteins_Mapping",
+      "source": "https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/Covid19_Interacting_Host_Proteins_Mapping/Covid19_Interacting_Host_Proteins_Mapping.yaml",
+      "links": [],
+      "name": "Covid19_Interacting_Host_Proteins_Mapping",
+      "description": "Subcellular mapping of the host SARS-CoV-2 interacting proteins. through large-scale immunofluorescence and a high-throughput confocal microscopy screen. Using our existing infrastructure, personnel and unique antibody resource from the Human Protein Atlas (HPA), we can directly study 330 of the 332 SARS-CoV-2 interacting host proteins while commercial antibodies for the remaining two targets can be purchased for complete coverage. To determine the baseline of subcellular localization, as well as potential relocalization upon viral infection, the screen is performed in non-infected and virus-infected cell lines. This Mapping has two aims, one is determination of the subcellular localization/relocalization of virus interacting host proteins, the other is targeted drug repurposing to identify treatments affecting virus interacting proteins.",
+      "cite": [
+        {
+          "text": "Stadler, Charlotte et al. Spatial single cell mapping of SARS-CoV-2 interacting host proteins for quick and targeted drug repurposing."
+        }
+      ],
+      "authors": [
+        "Charlotte Stadler",
+        "Emma Lundberg"
+      ],
+      "tags": [
+        "drug screening",
+        "cofocal",
+        "covid19"
+      ],
+      "format_version": "0.1.0",
+      "covers": [
+        "Covid19_Interacting_Host_Proteins_Mapping.png"
       ]
     },
     {
@@ -288,8 +315,8 @@
         "Marius Pachitariu"
       ],
       "tags": [
-        "covid19",
-        "segmentation"
+        "segmentation",
+        "covid19"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -341,13 +368,13 @@
         "Yang Yang"
       ],
       "tags": [
-        "lung",
         "CT",
         "cnn",
-        "keras",
-        "pytorch",
+        "tensorflow",
         "covid19",
-        "tensorflow"
+        "lung",
+        "keras",
+        "pytorch"
       ],
       "format_version": "0.1.0",
       "covers": [

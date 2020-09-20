@@ -76,3 +76,7 @@ model:
 - id: OpenCovidDetector
   source: https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/OpenCovidDetector/OpenCovidDetector.model.yaml
   links: []
+  
+- id: Covid19_Interacting_Host_Proteins_Mapping
+  source: https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/Covid19_Interacting_Host_Proteins_Mapping/Covid19_Interacting_Host_Proteins_Mapping.yaml
+  links: []
