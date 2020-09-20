@@ -82,6 +82,32 @@
       "authors": []
     },
     {
+      "id": "Covid19ImageAnnotator",
+      "type": "application",
+      "source": "https://raw.githubusercontent.com/CellProfiling/cellpro-imjoy-plugins/master/src/Covid19ImageAnnotator.imjoy.html",
+      "icon": "extension",
+      "name": "Covid19ImageAnnotator",
+      "version": "0.2.39",
+      "api_version": "0.1.7",
+      "description": "Annotate images for Covid image classification",
+      "requirements": [
+        "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js",
+        "https://static.imjoy.io/spectre.css/spectre.min.css",
+        "https://static.imjoy.io/spectre.css/spectre-exp.min.css",
+        "https://static.imjoy.io/spectre.css/spectre-icons.min.css",
+        "https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css",
+        "https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js",
+        "https://www.gstatic.com/charts/loader.js",
+        "https://www.google.com/jsapi"
+      ],
+      "dependencies": [],
+      "env": "",
+      "tags": [],
+      "covers": [],
+      "badges": [],
+      "authors": []
+    },
+    {
       "id": "CellPose",
       "type": "application",
       "source": "https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/src/cellpose.imjoy.html",
@@ -123,8 +149,8 @@
       ],
       "tags": [
         "covid19",
-        "Inception",
-        "CT"
+        "CT",
+        "Inception"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -156,10 +182,10 @@
         "Eliot Siegel"
       ],
       "tags": [
-        "covid19",
-        "unet",
+        "CT",
         "resnet-50",
-        "CT"
+        "covid19",
+        "unet"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -211,8 +237,8 @@
         "Perkin Elmer"
       ],
       "tags": [
-        "covid19",
-        "OME-TIFF"
+        "OME-TIFF",
+        "covid19"
       ],
       "license": "CC-BY 4.0",
       "download_url": "https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/PKI_scans/LuCa-7color_Scan1.qptiff",
@@ -288,8 +314,8 @@
         "Marius Pachitariu"
       ],
       "tags": [
-        "covid19",
-        "segmentation"
+        "segmentation",
+        "covid19"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -342,12 +368,12 @@
       ],
       "tags": [
         "lung",
-        "CT",
+        "tensorflow",
         "cnn",
-        "keras",
-        "pytorch",
         "covid19",
-        "tensorflow"
+        "pytorch",
+        "CT",
+        "keras"
       ],
       "format_version": "0.1.0",
       "covers": [
