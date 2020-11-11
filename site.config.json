@@ -101,11 +101,6 @@
       "name": "Applications",
       "type": "application",
       "description": "List software, web apps and utility tools"
-    },
-    {
-      "name": "Notebooks",
-      "type": "notebook",
-      "description": "List Jupyter notebooks/Colab for models, workflows"
     }
   ]
 }

@@ -33,7 +33,9 @@ application:
   - id: Covid19ImageAnnotator
     source: https://raw.githubusercontent.com/CellProfiling/cellpro-imjoy-plugins/master/src/Covid19ImageAnnotator.imjoy.html
     links: []
-  
+  - id: COVID-19-Detector
+    source: https://gist.githubusercontent.com/nguyenhoa93/8bd949ce13adef6e992665372cf485b7/raw/COVID-19-Detector.imjoy.html
+    links: []
 
 dataset:
   - id: LuCa-7color
