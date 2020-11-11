@@ -34,7 +34,7 @@ application:
     source: https://raw.githubusercontent.com/CellProfiling/cellpro-imjoy-plugins/master/src/Covid19ImageAnnotator.imjoy.html
     links: []
   - id: COVID-19-Detector
-    source: https://gist.githubusercontent.com/nguyenhoa93/8bd949ce13adef6e992665372cf485b7/raw/COVID-19-Detector.imjoy.html
+    source: https://gist.githubusercontent.com/oeway/32e49de938c62cb95a116d704ae819d2/raw/COVID-19-Detector.imjoy.html
     links: []
 
 dataset:
@@ -55,7 +55,7 @@ notebook: []
 
 model:
 - id: HPAShuffleNetV2
-  source: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.yaml
+  source: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.model.yaml
   links: [HPA-Classification]
 
 - id: COVID19 CT

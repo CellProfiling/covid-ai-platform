@@ -87,7 +87,7 @@
       "source": "https://raw.githubusercontent.com/CellProfiling/cellpro-imjoy-plugins/master/src/Covid19ImageAnnotator.imjoy.html",
       "icon": "extension",
       "name": "Covid19ImageAnnotator",
-      "version": "0.2.41",
+      "version": "0.2.42",
       "api_version": "0.1.7",
       "description": "Image annotator for Covid19 interacting host proteins mapping",
       "requirements": [
@@ -123,6 +123,40 @@
       "authors": []
     },
     {
+      "id": "COVID-19-Detector",
+      "type": "application",
+      "source": "https://gist.githubusercontent.com/oeway/32e49de938c62cb95a116d704ae819d2/raw/COVID-19-Detector.imjoy.html",
+      "icon": "extension",
+      "name": "COVID-19-Detector",
+      "version": "0.1.5",
+      "api_version": "0.1.8",
+      "description": "Classifying COVID-19 X-ray images with deep learning",
+      "requirements": [
+        "https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js",
+        "https://unpkg.com/papaparse@latest/papaparse.min.js",
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js",
+        "https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css",
+        "https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js",
+        "https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js",
+        "https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js",
+        "https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js",
+        "https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js",
+        "https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js",
+        "https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js",
+        "https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js",
+        "https://use.fontawesome.com/6377070916.js",
+        "https://www.w3schools.com/w3css/4/w3.css"
+      ],
+      "dependencies": [],
+      "env": "",
+      "tags": [],
+      "covers": [
+        "https://dl.dropbox.com/s/7g2yj4zztkm6w20/ct-images-cover.png"
+      ],
+      "badges": [],
+      "authors": []
+    },
+    {
       "type": "model",
       "root_url": "https://raw.githubusercontent.com/haoxusci/covid19ai-models/master/models/TianjinMUC",
       "id": "TianjinMUC",
@@ -150,9 +184,9 @@
         "Bo Xu"
       ],
       "tags": [
-        "CT",
+        "Inception",
         "covid19",
-        "Inception"
+        "CT"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -184,10 +218,10 @@
         "Eliot Siegel"
       ],
       "tags": [
-        "resnet-50",
-        "CT",
+        "unet",
         "covid19",
-        "unet"
+        "resnet-50",
+        "CT"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -222,8 +256,8 @@
         "Jianjiang Feng"
       ],
       "tags": [
-        "CT",
-        "covid19"
+        "covid19",
+        "CT"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -250,6 +284,43 @@
       ],
       "links": [
         "vizarr"
+      ]
+    },
+    {
+      "type": "model",
+      "root_url": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2",
+      "id": "HPAShuffleNetV2",
+      "source": "https://raw.githubusercontent.com/oeway/Anet-Model-Zoo/master/4_hpa_shufflenet_v2/model.json",
+      "links": [
+        "HPA-Classification"
+      ],
+      "name": "HPA ShuffleNetV2",
+      "description": "A light-weight model for HPA image classification competition",
+      "cite": null,
+      "authors": [
+        "Moshe Livne",
+        "Wei OUYANG"
+      ],
+      "documentation": "HPAShuffleNetV2.md",
+      "tags": [
+        "tensorflow.js",
+        "covid19",
+        "imjoy",
+        "shufflenet",
+        "classification"
+      ],
+      "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
+      "badges": [
+        {
+          "url": "https://imjoy.io",
+          "icon": "https://imjoy.io/static/badge/powered-by-imjoy-badge.svg",
+          "label": "Powered by ImJoy"
+        }
+      ],
+      "license": "Apache 2.0",
+      "format_version": "0.1.0",
+      "covers": [
+        "https://imjoy-team.github.io/imjoy-plugins/hpa-classification/hpa-classification-cover.gif"
       ]
     },
     {
@@ -316,8 +387,8 @@
         "Marius Pachitariu"
       ],
       "tags": [
-        "covid19",
-        "segmentation"
+        "segmentation",
+        "covid19"
       ],
       "format_version": "0.1.0",
       "covers": [
@@ -369,13 +440,13 @@
         "Yang Yang"
       ],
       "tags": [
-        "CT",
-        "cnn",
+        "covid19",
+        "tensorflow",
         "keras",
         "lung",
-        "covid19",
+        "cnn",
         "pytorch",
-        "tensorflow"
+        "CT"
       ],
       "format_version": "0.1.0",
       "covers": [
